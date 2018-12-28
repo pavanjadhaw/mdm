@@ -8,27 +8,15 @@ const { id, token } = require('./config');
 
 const cli = meow(
   `
-	Usage
-    $ mdm --publish <myAwesomePost.md> …
-
-  Options
-    --init,    -i     Get unique user id required for publishing posts.
-    --publish, -p     Publishes markdown to medium.
+  Usage
+    $ mdm init
+    $ mdm publish <myAwesomePost.md> …
 
   Examples
-	  $ mdm --publish myAwesomePost.md
-    $ mdm -p ~/medium/draft/latest.md
+	  $ mdm publish myAwesomePost.md
 `,
   {
     flags: {
-      init: {
-        type: 'boolean',
-        alias: 'i',
-      },
-      publish: {
-        type: 'string',
-        alias: 'p',
-      },
       help: {
         alias: 'h',
       },
@@ -39,13 +27,13 @@ const cli = meow(
   }
 );
 
-const { init, publish } = cli.flags;
+const input = cli.input[0];
 
 (async () => {
-  if (init) {
+  if (input === 'init') {
     getId(token);
-  } else if (publish) {
-    const markdownFile = publish;
+  } else if (input === 'publish') {
+    const markdownFile = cli.input[1];
     post(id, token, markdownFile);
   } else {
     console.error('Specify markdown file to publish...');
