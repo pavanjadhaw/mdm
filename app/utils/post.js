@@ -16,7 +16,7 @@ const mapContent = require('../helpers/map-content');
  * @param {String} markdownFile is markdown file to be published
  */
 const post = async (id, token, markdownFile) => {
-  const spinner = ora(`Publishing ${markdownFile} to medium…`).start();
+  const spinner = ora(`Publishing…`).start();
 
   try {
     if (!id || !token) {
@@ -33,10 +33,8 @@ const post = async (id, token, markdownFile) => {
     });
 
     if (response.statusCode === 201) {
-      spinner.succeed(
-        `Done! Your post has been published at
-${response.body.data.url}`
-      );
+      spinner.stop();
+      console.log(`${response.body.data.url}`);
     }
   } catch (error) {
     if (error.statusCode === 400)
