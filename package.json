@@ -1,6 +1,6 @@
 {
   "name": "@pavanjadhaw/mdm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "publish your markdown to Medium, from the CLI",
   "author": "Pavan Jadhaw <@pavanjadhaw>",
   "main": "cli.js",
