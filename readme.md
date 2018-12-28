@@ -39,7 +39,7 @@ Export this integration token by adding it to your `~/.bashrc` or `~/.zshrc` as 
 export MEDIUM_TOKEN='token here'
 ```
 
-after adding integration token you can easily get your unique author id by running `mdm -i` or `mdm --init`
+after adding integration token you can easily get your unique author id by running `mdm init`.
 then export your unique author id as follows
 
 ```sh
@@ -74,7 +74,7 @@ Medium will then CDN it and you can delete it from there if you want to.
 When you’re ready to publish, run
 
 ```console
-$ mdm --publish path/to/markdown.md
+$ mdm publish path/to/markdown.md
 Done! Your post has been published at https://medium.com/@gaben/76272e9d241c
 ```
 
