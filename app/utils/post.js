@@ -19,7 +19,7 @@ const post = async (id, token, markdownFile) => {
   const spinner = ora(`Publishing…`).start();
 
   try {
-    if (!id || !token) {
+    if (typeof id === 'undefined' || typeof token === 'undefined') {
       spinner.fail('Medium integration token or authorID missing.');
       process.exit(1);
     }

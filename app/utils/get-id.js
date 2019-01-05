@@ -13,7 +13,7 @@ const getId = async token => {
   const spinner = ora(`Getting your unique medium userid…`).start();
 
   try {
-    if (!token) {
+    if (typeof token === 'undefined') {
       spinner.fail('Medium integration token missing.');
       process.exit(1);
     }
