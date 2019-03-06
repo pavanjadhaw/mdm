@@ -25,9 +25,7 @@ without leaving your comfy terminal.
 
 ## Install
 
-```
-$ npm i -g @pavanjadhaw/mdm
-```
+No installation required. Can be directly used via ```npx```!
 
 ## Configure
 
@@ -39,7 +37,7 @@ Export this integration token by adding it to your `~/.bashrc` or `~/.zshrc` as 
 export MEDIUM_TOKEN='token here'
 ```
 
-after adding integration token you can easily get your unique author id by running `mdm init`.
+After adding integration token you can easily get your unique author id by running `npx @pavanjadhaw/mdm init`.
 then export your unique author id as follows
 
 ```sh
@@ -74,19 +72,11 @@ Medium will then CDN it and you can delete it from there if you want to.
 When you’re ready to publish, run
 
 ```console
-$ mdm publish path/to/markdown.md
+$ npx @pavanjadhaw/mdm publish path/to/markdown.md
 Done! Your post has been published at https://medium.com/@gaben/76272e9d241c
 ```
 
 It’s that simple.
-
-## Uninstall
-
-It's sad to see you go :(
-
-```sh
-$ npm uninstall -g @pavanjadhaw/mdm
-```
 
 ## Inspiration
 

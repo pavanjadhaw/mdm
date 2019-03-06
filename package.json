@@ -30,6 +30,7 @@
   "dependencies": {
     "front-matter": "^3.0.1",
     "got": "^9.5.0",
+    "markdown-to-text-emoji": "^1.1.0",
     "meow": "^5.0.0",
     "ora": "^3.0.0"
   },

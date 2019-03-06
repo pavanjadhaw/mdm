@@ -20,7 +20,12 @@ const post = async (id, token, markdownFile) => {
 
   try {
     if (typeof id === 'undefined' || typeof token === 'undefined') {
-      spinner.fail('Medium integration token or authorID missing.');
+      spinner.fail(`Medium integration token or authorID missing.
+      
+      Have you added authorID gotten from 
+      $ npx @pavanjadhaw/mdm init
+
+      Use '$ npx @pavanjadhaw/mdm -h' for help`);
       process.exit(1);
     }
 
