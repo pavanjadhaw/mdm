@@ -9,11 +9,11 @@ const { id, token } = require('./config');
 const cli = meow(
   `
   Usage
-    $ mdm init
-    $ mdm publish <myAwesomePost.md> …
+    $ npx mdium init
+    $ npx mdium publish <myAwesomePost.md> …
 
   Examples
-	  $ mdm publish myAwesomePost.md
+	  $ npx mdium publish myAwesomePost.md
 `,
   {
     flags: {
@@ -36,7 +36,9 @@ const input = cli.input[0];
     const markdownFile = cli.input[1];
     post(id, token, markdownFile);
   } else {
-    console.error('Specify markdown file to publish...');
+    console.error(`Specify markdown file to publish
+    
+    Use '$ npx mdium -h' for help`);
     process.exit(1);
   }
 })();

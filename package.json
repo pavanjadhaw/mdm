@@ -1,11 +1,11 @@
 {
-  "name": "@pavanjadhaw/mdm",
-  "version": "0.0.4",
+  "name": "mdium",
+  "version": "0.0.5",
   "description": "publish your markdown to Medium, from the CLI",
   "author": "Pavan Jadhaw <@pavanjadhaw>",
   "main": "cli.js",
   "bin": {
-    "mdm": "app/bin/mdm"
+    "mdium": "app/bin/mdium"
   },
   "engines": {
     "node": ">=8"
@@ -30,6 +30,7 @@
   "dependencies": {
     "front-matter": "^3.0.1",
     "got": "^9.5.0",
+    "markdown-to-text-emoji": "^1.1.0",
     "meow": "^5.0.0",
     "ora": "^3.0.0"
   },

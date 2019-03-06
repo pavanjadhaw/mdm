@@ -25,11 +25,9 @@ without leaving your comfy terminal.
 
 ## Install
 
-```
-$ npm i -g @pavanjadhaw/mdm
-```
+No installation required. Can be directly used via ```npx```!
 
-## Configure
+## Initialization
 
 MDM requires medium integration token and author id to be able to publish your markdown.
 You can generate integration token from the medium [settings](https://medium.com/me/settings) page.
@@ -39,8 +37,11 @@ Export this integration token by adding it to your `~/.bashrc` or `~/.zshrc` as 
 export MEDIUM_TOKEN='token here'
 ```
 
-after adding integration token you can easily get your unique author id by running `mdm init`.
-then export your unique author id as follows
+After adding integration token you can easily get your unique author id by running 
+
+`npx mdium init`
+
+Then export your unique author id as follows
 
 ```sh
 export MEDIUM_ID='authorID here'
@@ -74,19 +75,11 @@ Medium will then CDN it and you can delete it from there if you want to.
 When you’re ready to publish, run
 
 ```console
-$ mdm publish path/to/markdown.md
+$ npx mdium publish path/to/markdown.md
 Done! Your post has been published at https://medium.com/@gaben/76272e9d241c
 ```
 
 It’s that simple.
-
-## Uninstall
-
-It's sad to see you go :(
-
-```sh
-$ npm uninstall -g @pavanjadhaw/mdm
-```
 
 ## Inspiration
 
