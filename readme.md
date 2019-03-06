@@ -27,7 +27,7 @@ without leaving your comfy terminal.
 
 No installation required. Can be directly used via ```npx```!
 
-## Configure
+## Initialization
 
 MDM requires medium integration token and author id to be able to publish your markdown.
 You can generate integration token from the medium [settings](https://medium.com/me/settings) page.
@@ -37,8 +37,11 @@ Export this integration token by adding it to your `~/.bashrc` or `~/.zshrc` as 
 export MEDIUM_TOKEN='token here'
 ```
 
-After adding integration token you can easily get your unique author id by running `npx @pavanjadhaw/mdm init`.
-then export your unique author id as follows
+After adding integration token you can easily get your unique author id by running 
+
+`npx @pavanjadhaw/mdm init`
+
+Then export your unique author id as follows
 
 ```sh
 export MEDIUM_ID='authorID here'
