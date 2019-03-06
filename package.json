@@ -1,11 +1,11 @@
 {
-  "name": "@pavanjadhaw/mdm",
+  "name": "mdium",
   "version": "0.0.4",
   "description": "publish your markdown to Medium, from the CLI",
   "author": "Pavan Jadhaw <@pavanjadhaw>",
   "main": "cli.js",
   "bin": {
-    "mdm": "app/bin/mdm"
+    "mdium": "app/bin/mdium"
   },
   "engines": {
     "node": ">=8"

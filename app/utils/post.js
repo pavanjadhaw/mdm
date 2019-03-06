@@ -23,9 +23,9 @@ const post = async (id, token, markdownFile) => {
       spinner.fail(`Medium integration token or authorID missing.
       
       Have you added authorID gotten from 
-      $ npx @pavanjadhaw/mdm init
+      $ npx mdium init
 
-      Use '$ npx @pavanjadhaw/mdm -h' for help`);
+      Use '$ npx mdium -h' for help`);
       process.exit(1);
     }
 

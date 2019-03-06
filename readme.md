@@ -39,7 +39,7 @@ export MEDIUM_TOKEN='token here'
 
 After adding integration token you can easily get your unique author id by running 
 
-`npx @pavanjadhaw/mdm init`
+`npx mdium init`
 
 Then export your unique author id as follows
 
@@ -75,7 +75,7 @@ Medium will then CDN it and you can delete it from there if you want to.
 When you’re ready to publish, run
 
 ```console
-$ npx @pavanjadhaw/mdm publish path/to/markdown.md
+$ npx mdium publish path/to/markdown.md
 Done! Your post has been published at https://medium.com/@gaben/76272e9d241c
 ```
 
